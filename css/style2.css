@@ -1,0 +1,487 @@
+.word {
+  margin: auto;
+  color: white;
+  height: 5.8rem;
+  font: 500 normal 1.2em 'Quicksand';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+.hidden {
+    display: none !important;
+}
+
+main {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 1rem 2rem;
+}
+.buttons button {
+    border: none;
+    height: 3.6rem;
+    border-radius: 1.0rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: #FFF;
+    padding: 0 3rem;
+    background-color: rgb(134, 185, 216);
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: rgb(112, 163, 194);
+}
+.buttons button.btn-cookie {
+    background-color: rgb(234, 194, 145);
+}
+.buttons button.btn-cookie:hover {
+    background-color: rgb(198, 156, 106);
+}
+.buttons button.btn-exclamation {
+    background-color: rgb(226, 119, 84);
+}
+.buttons button.btn-exclamation:hover {
+    background-color: rgb(180, 89, 59);
+}
+.buttons button.btn-medal {
+    background-color: rgb(91, 24, 24);
+}
+.buttons button.btn-medal:hover {
+    background-color: rgb(70, 14, 14);
+}
+
+
+/* POPUPS */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+    display: grid;
+    place-items: center;
+    transition: opacity 2s;
+   z-index: 999;
+}
+.popup-content {
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/family.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    min-height: 40rem;
+    border-radius: .5rem;
+     width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #aaa;
+    box-shadow: 0 0 3rem rgba(0,0,0,.3);
+    animation: popup 1.1s linear forwards;
+   opacity: 0.5;
+}
+.popup-content-hide {
+    animation: hide 0.8s linear forwards !important;
+}
+.popup-header {
+    min-height: 35.5rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 7rem;
+}
+
+.popup-text {
+    margin: 4rem;
+    text-align: center;
+    margin-top: 65%;
+}
+.popup-text h5 {
+    font-size: 21px;
+    color: #fff;
+    font-family: cursive;
+    margin-bottom: 1rem;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+.popup-text p {
+    font-size: 25px;
+    margin-bottom: 1rem;
+   font-family: cursive;
+    margin-bottom: 1rem;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+.popup-text button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 1.0rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: #FFF;
+    background-color: rgb(134, 185, 216);
+    cursor: pointer;
+     
+}
+.popup-text button:hover {
+    background-color: rgb(112, 163, 194);
+}
+.popup-text button.btn-grey {
+    background-color: rgb(203, 203, 203);
+}
+.popup-text button.btn-grey:hover {
+    background-color: rgb(178, 178, 178);
+}
+.popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: #999;
+    cursor: pointer;
+}
+
+/* COOKIE POPUP */
+.popup-cookie .cookie {
+    transform: rotate(40deg) translateY(-1rem);
+}
+.popup-cookie h1 {
+    color: rgb(234, 194, 145);
+}
+.popup-cookie button {
+    background-color: rgb(234, 194, 145);
+}
+.popup-cookie button:hover {
+    background-color: rgb(198, 156, 106);
+}
+
+/* EXCLAMATION POPUP */
+.popup-exclamation .exclamation {
+    transform: rotate(-10deg) translateY(-2rem);
+}
+.popup-exclamation h1 {
+    color: rgb(226, 119, 84);
+}
+.popup-exclamation button {
+    background-color: rgb(226, 119, 84);
+}
+.popup-exclamation button:hover {
+    background-color: rgb(180, 89, 59);
+}
+
+/* MEDAL POPUP */
+.popup-medal .medal {
+    transform: rotate(5deg) translateY(-2rem);
+}
+.popup-medal h1 {
+    color: rgb(91, 24, 24);
+}
+.popup-medal button {
+    background-color: rgb(91, 24, 24);
+}
+.popup-medal button:hover {
+    background-color: rgb(70, 14, 14);
+}
+
+
+/* ENVELOPE */
+.mail {
+    position: relative;
+    transform: rotate(-10deg);
+    width: 15rem;
+} 
+
+.envelope {
+    position: relative;
+    background: transparent;
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 1rem 1rem rgba(25, 40, 43, 0.4);
+}
+.envelope-back {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(134, 185, 216);
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+    z-index: 1;
+}
+.envelope::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-left: 1rem solid rgba(219, 235, 245, 0.576);
+    border-top: 1rem solid transparent;
+}
+.envelope-left, .envelope-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(178, 214, 236);
+    width: 10rem;
+    height: 10rem;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    box-shadow: -.5rem -.5rem 0 rgba(127, 163, 186, 0.5);
+}
+.envelope-right {
+    left: auto;
+    right: 0;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+    background-color: rgb(178, 214, 236);
+}
+.envelope-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: -55%;
+    transform: translateX(-50%) rotate(45deg);
+    background-color: rgb(178, 214, 236);
+    border-radius: 1rem;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: -.5rem -.5rem 0 rgba(127, 163, 186, .5);
+}
+.envelope-top {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    background-color: rgb(134, 185, 216);
+    border-radius: 1rem 0 0 0;
+    width: 10rem;
+    height: 10rem;
+    outline: .3rem solid rgb(134, 185, 216);
+    z-index: 1;
+}
+
+.letter {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11rem;
+    height: 10rem;
+    background-color: #FFF;
+    z-index: 2;
+    border: .5rem solid rgba(127, 163, 186, 0.5);
+    display: grid;
+    place-items: center;
+}
+.face {
+    position: relative;
+    transform: translateY(-1rem);
+    width: 6rem;
+    height: 2rem;
+}
+.eye-left, .eye-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(110, 133, 148);
+}
+.eye-right {
+    right: 0;
+    left: auto;
+}
+.mouth {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: linear-gradient(to top, rgb(110, 133, 148),  rgb(110, 133, 148) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
+}
+
+/* COOKIE */
+.cookie {
+    position: relative;
+}
+.cookie-body {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: rgb(234, 194, 145);
+    overflow: hidden;
+    box-shadow: .5rem .5rem 0 rgba(0,0,0,.2);
+}
+.cookie-bite {
+    content: '';
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #FFF;
+    right: 2rem;
+    top: .8rem;
+    box-shadow: 3rem .5rem 0 #FFF,
+        -2rem -2rem 0 #FFF;
+}
+
+.cookie-body .face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+.cookie-body .mouth { background: linear-gradient(to top, rgb(55, 38, 18),  rgb(55, 38, 18) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)); }
+.cookie-body .eye-left, .cookie-body .eye-right { background-color: rgb(55, 38, 18); }
+
+.cookie-body::before {
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    border-radius: 50%;
+    border: 1rem solid rgb(255, 216, 168);
+    transform: translate(-.4rem, -.2rem)
+}
+.cookie-body::after {
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    bottom: -.4rem;
+    right: -.4rem;
+    border-radius: 50%;
+    border: .8rem solid rgb(183, 144, 114);
+    transform: translate(-.3rem, -.2rem)
+}
+
+.chocolate-chip {
+    background: rgb(179, 133, 98);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.5rem;
+    left: 3.5rem;
+    box-shadow: 6rem 6rem 0 -.2rem rgb(179, 133, 98),
+        4rem 8rem 0 .1rem rgb(179, 133, 98),
+        8rem 2rem 0 -.4rem rgb(179, 133, 98),
+        -1rem 6rem 0 -.2rem rgb(179, 133, 98);
+}
+
+/* EXCLAMATION MARK */
+.exclamation {
+    position: relative;
+    min-height: 17rem;
+}
+.exclamation-main {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    border-radius: 1rem;
+    width: 7rem;
+    height: 10rem;
+    background-color: rgb(226, 119, 84);
+}
+.exclamation-shadow {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    border-radius: 1rem;
+    width: 7rem;
+    height: 10rem;
+    background-color: rgba(0,0,0,.2);
+}
+.exclamation-dot {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    background-color: rgb(226, 119, 84);
+    box-shadow: 1rem 1rem rgba(0,0,0,.2);
+}
+
+.exclamation .face {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.exclamation .mouth { background: linear-gradient(to top, rgb(55, 38, 18),  rgb(55, 38, 18) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)); }
+.exclamation .eye-left, .exclamation .eye-right { background-color: rgb(55, 38, 18); }
+
+/* MEDAL */
+.medal {
+    position: relative;
+    height: 15rem;
+}
+.medal-body {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: rgb(255, 230, 0);
+    border: 2rem solid rgb(236, 185, 0);
+    overflow: hidden;
+    box-shadow: .5rem .5rem 0 rgba(0,0,0,.2);
+}
+.medal-body::after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border: 1rem solid rgb(255, 244, 144);
+    top: -.5rem;
+    left: -.5rem;
+    border-radius: 50%;
+}
+.medal-ribbon {
+    position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    width: 9rem;
+    height: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    background: linear-gradient(to right, rgb(91, 24, 24) 50%, rgb(177, 52, 52) 50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.medal-ribbon-shadow {
+    position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    width: 9rem;
+    height: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    background: rgba(0,0,0,.2);
+    transform: translate(-50%, -50%) translate(.5rem, .5rem);
+    z-index: -1;
+}
+
+.medal .face {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.medal .mouth { background: linear-gradient(to top, rgb(114, 85, 13),  rgb(114, 85, 13) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)); }
+.medal .eye-left, .medal .eye-right { background-color: rgb(114, 85, 13); }
+
+
+@keyframes hide {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+}
+@keyframes popup {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
