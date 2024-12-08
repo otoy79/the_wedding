@@ -1,3 +1,18 @@
+.likes {
+ position: relative;
+  margin-top: -50px;
+  padding: 0px;
+  height: 55px;
+  z-index: 0;
+  color: #0b47a1;
+}
+.foter-like {
+  height: 80px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
+  }
 .label {
   padding: 0px;
   font-size: 14px;
@@ -9,8 +24,7 @@
   padding: 0px;
   border-radius: 10px;
   display: flex;
-  width: 116px;
-  
+  width: 117px;
 }
 .copy-text input.text {
   padding: 0px;

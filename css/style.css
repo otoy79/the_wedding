@@ -4,7 +4,7 @@
 html ,body {
     
     overflow-x: hidden;
-    background: #daf0f2;
+    background: rgba(21, 192, 235, 0.1);
     opacity: 0.9;
     font-family: Quicksand;
   font-optical-sizing: auto;
@@ -609,14 +609,14 @@ p {
 
 .about .about-img .about-experience {
     position: absolute;
-    top: 125px; 
+    top: 142px; 
     left: -125px; 
     transform: rotate(-90deg);
     background: transparent;
     color: var(--bs-primary);
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 /*** About End ***/
@@ -874,10 +874,10 @@ p {
 }
 
 .testimonial .testimonial-item .testimonial-inner .testimonial-inner-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid var(--bs-white);
+    width: 280px;
+   max-height: 380px auto;
+    border-radius: 5%;
+    border: 1px solid var(--bs-white);
 }
 
 .testimonial .testimonial-carousel.owl-carousel {
@@ -928,12 +928,12 @@ p {
 
 @media (max-width: 900px) {
     .testimonial .testimonial-carousel .owl-nav .owl-prev {
-        margin-top: -190px;
+        margin-top: -150px;
         margin-left: 40px;
     }
 
     .testimonial .testimonial-carousel .owl-nav .owl-next {
-        margin-top: -190px;
+        margin-top: -150px;
         margin-right: 40px;
     }
     
@@ -943,21 +943,24 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
 }
 
 .testimonial-carousel .owl-dots .owl-dot {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     margin-right: 15px;
-    border: 1px solid var(--bs-white);
+    border: 0.1px solid var(--bs-white);
     background: transparent;
     transition: 0.9s;
+    text-align: center;
+    padding-left: 1px;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     background: var(--bs-secondary) !important;
 }
 
@@ -975,7 +978,7 @@ p {
     content: "";
     position: absolute;
     top: 50%;
-    right: 1px;
+    right: 0px;
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
