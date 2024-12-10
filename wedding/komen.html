@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>countdown</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+<meta itemprop="name" content="The Wedding">
+<meta itemprop="description" content="The Wedding Of. Undangan Digital. Semple Undangan Gigital">
+<meta itemprop="image" content="https://the-wedding-j1u.pages.dev/img/icon.png">
+
+        <!-- Google Web Fonts -->
+        
+ <style>
+   @font-face {
+font-family: 'Aeroport';
+    src: url('https://cc26299.tmweb.ru/files/fonts/Aeroport-Light.otf') format('opentype'),     
+    url('https://cc26299.tmweb.ru/files/fonts/Aeroport-Light.woff') format('woff');
+}
+.comment-wrapper {max-width:420px;}
+.comments-counter {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+p {margin:0;}
+.comments-counter p{
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 33px;
+color: #000000;
+}
+.counter {
+  margin-left:10px;
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+  background: #EEEDED;
+border-radius: 7px;
+  padding: 2px 7px 2px 7px;
+}
+.comments-counter {
+  margin-bottom:28px;
+}
+#name-com {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 9px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin-bottom:20px;
+  width:100%;
+}
+#name-com:placeholder {
+  color: #8C8989;
+}
+#comment-com{
+  width:100%;
+    font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 9px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin-bottom:20px;
+  resize:none;
+}
+#comment:focus {
+  resize:auto;
+}
+.submit-comment {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+text-transform: uppercase;
+color: #FFFFFF;
+  background: #608CFF;
+border-radius: 4px;
+  border:none!important;
+  padding: 9px 19px;
+  cursor:pointer;
+  transition: .3s;
+}
+.submit-comment:hover {
+  transform:translateY(-2px);
+}
+.field-comments {
+  margin-top:50px;
+}
+.comment-name {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: #000000;
+}
+.comment {
+  max-width:420px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: space-between;
+    margin-bottom:50px;
+}
+.comment-text  {
+  flex-basis:100%;
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+margin-top:9px;
+color: #000000;
+}
+.comment i {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+position:relative;
+color: #939393;
+}
+.comment i::before {
+  left:-30px;
+  top:5px;
+  position:absolute;
+  content: '';
+  width:20px;
+  height:20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath d='M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978 c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952 C357.766,320.208,355.981,307.775,347.216,301.211z' fill='%23939393' data-original='%23939393' class=''%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath d='M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341 c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341 S375.275,472.341,256,472.341z' fill='%23939393' data-original='%23939393' class=''%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size:cover!important;
+}
+.new-comment {
+animation: new-comment 2s linear forwards;
+}
+@keyframes new-comment {
+  0% {background: rgba(96,140,255,0.6);}
+  100%{background:rgba(96,140,255,0);}
+}
+
+    </style>
+
+    </head>
+
+    <body>
+
+
+
+
+
+
+
+<div class="comment-wrapper">
+    <div class="comments-counter"><p>Comments</p><span class="counter"></span></div><input placeholder="Tulis Nama" id="name-com" type="text"><textarea placeholder="Your comment..." id="comment-com" type="text"></textarea><button class="submit-comment">Send </button></div>
+
+<section class ="field-comments"></section>
+
+
+  <script>
+
+function filterArray(array) {
+    return $.grep(array, function(element) {
+        return element !== null && element !== undefined && element.length !== 0;
+    });
+}
+$('.submit-comment').click(function(e) {
+    let name = $('#name-com').val()
+let comment = $('#comment-com').val()
+if (name.length>3&&comment.length>3) {
+  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Только что</i><p class="comment-text">${comment}</p></div>`)
+name = encodeURI(name)
+  comment = encodeURI(comment)
+$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSey059DC3ItyV1Mi_A04BB0WrNpi9jK8mWQz_C-Bqfp3YL-Gg/formResponse?usp=pp_url&entry.1740545310='+name+'&entry.982008662='+comment+'' );
+   $('.counter').text( $('.counter').text()*1+1)
+  $('.comment-wrapper').append('<p class="comment-text">Ваш комментарий оставлен</p>')
+  $('#name-com').hide()
+  $('#comment-com').hide()
+  $('.submit-comment').hide()
+}
+})
+fetch('https://script.google.com/macros/s/AKfycbz0XZ5val2JnT1DfN874JMS9DAPykvRM34K1PsO7mZ9TXU207y5Zrhjvyso0kPa9zcLJw/exec').then(function (response) {
+ return response.json();
+}).then(function (json) {
+
+let comments = json.GoogleSheetData
+delete comments[0]
+jQuery.each( comments, function( i, val ) {
+if(val!==undefined) {
+val = filterArray(val)
+}
+  if(val!==undefined&&val.length===3) {
+  
+    $('.counter').text(comments.length - 1)
+    const digitMonths = {
+  1: 'Янв',
+2: 'Фев',
+      3: 'Мар',
+      4: 'Апр',
+      5: 'Май',
+      6: 'Июн',
+      7: 'Июл',
+      8: 'Авг',
+      9: 'Сен',
+      10: 'Окт',
+      11: 'Ноя',
+      12: 'Дек',
+};
+  let hh = new Date(val[0]).getHours()*1
+  if(hh<10) {hh='0'+hh}
+  let mm = new Date(val[0]).getMinutes()*1
+  if(mm<10) {mm='0'+mm}
+  let dd = new Date(val[0]).getDate()*1
+  if(dd<10) {dd='0'+dd}
+    let time = hh+':'+mm+', '+ dd+' '+digitMonths[new Date(val[0]).getMonth()+1]+' ' + new Date(val[0]).getFullYear(),
+        name = val[1],
+        comment = val[2]
+    $('.field-comments').prepend(`<div class="comment"><p class="comment-name">${name} </p><i>${time}</i><p class="comment-text">${comment}</p></div>`)}
+
+});
+hideComments()
+}).catch(function (err) {
+ console.warn('Something went wrong.', err);
+});
+
+function hideComments() {
+  let hiddenNumber = 5
+if ($('.comment').length>(hiddenNumber-1)) {
+let comments = $('.comment')
+for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {comments[i].classList.add('hidden')}}
+  $('.field-comments').append('<a class="show-more" onclick="showMore()">Показать все комментарии</a>')
+}
+  }
+
+function showMore() {
+  $('.comment').removeClass('hidden')
+  $('.show-more').hide()
+}
+
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
