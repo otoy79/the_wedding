@@ -191,12 +191,12 @@ $('.submit-comment').click(function(e) {
     let name = $('#name-com').val()
 let comment = $('#comment-com').val()
 if (name.length>3&&comment.length>3) {
-  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Только что</i><p class="comment-text">${comment}</p></div>`)
+  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
 name = encodeURI(name)
   comment = encodeURI(comment)
-$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSey059DC3ItyV1Mi_A04BB0WrNpi9jK8mWQz_C-Bqfp3YL-Gg/formResponse?usp=pp_url&entry.1740545310='+name+'&entry.982008662='+comment+'' );
+$.post( 'https://forms.gle/Mkp9XdLNF22qdgSo6+name+'&entry.982008662='+comment+'' );
    $('.counter').text( $('.counter').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Ваш комментарий оставлен</p>')
+  $('.comment-wrapper').append('<p class="comment-text">Your comment is left</p>')
   $('#name-com').hide()
   $('#comment-com').hide()
   $('.submit-comment').hide()
@@ -216,18 +216,18 @@ val = filterArray(val)
   
     $('.counter').text(comments.length - 1)
     const digitMonths = {
-  1: 'Янв',
-2: 'Фев',
-      3: 'Мар',
-      4: 'Апр',
-      5: 'Май',
-      6: 'Июн',
-      7: 'Июл',
-      8: 'Авг',
-      9: 'Сен',
-      10: 'Окт',
-      11: 'Ноя',
-      12: 'Дек',
+  1: 'Jan',
+2: 'Feb',
+      3: 'Mar',
+      4: 'Apr',
+      5: 'Mei',
+      6: 'Jun',
+      7: 'Jul',
+      8: 'Agst',
+      9: 'Sept',
+      10: 'Okt',
+      11: 'Nov',
+      12: 'Des',
 };
   let hh = new Date(val[0]).getHours()*1
   if(hh<10) {hh='0'+hh}
