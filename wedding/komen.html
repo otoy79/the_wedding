@@ -194,7 +194,7 @@ if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Только что</i><p class="comment-text">${comment}</p></div>`)
 name = encodeURI(name)
   comment = encodeURI(comment)
-$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSey059DC3ItyV1Mi_A04BB0WrNpi9jK8mWQz_C-Bqfp3YL-Gg/formResponse?usp=pp_url&entry.1740545310='+name+'&entry.982008662='+comment+'' );
+$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2shhGVq0doB6AyP1KSHhA/viewform?usp=dialog' );
    $('.counter').text( $('.counter').text()*1+1)
   $('.comment-wrapper').append('<p class="comment-text">Ваш комментарий оставлен</p>')
   $('#name-com').hide()
