@@ -191,18 +191,18 @@ $('.submit-comment').click(function(e) {
     let name = $('#name-com').val()
 let comment = $('#comment-com').val()
 if (name.length>3&&comment.length>3) {
-  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
+  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Только что</i><p class="comment-text">${comment}</p></div>`)
 name = encodeURI(name)
   comment = encodeURI(comment)
-$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2shhGVq0doB6AyP1KSHhA/viewform?usp=header'' );
+$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSey059DC3ItyV1Mi_A04BB0WrNpi9jK8mWQz_C-Bqfp3YL-Gg/formResponse?usp=pp_url&entry.1740545310='+name+'&entry.982008662='+comment+'' );
    $('.counter').text( $('.counter').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Your comment is left</p>')
+  $('.comment-wrapper').append('<p class="comment-text">Ваш комментарий оставлен</p>')
   $('#name-com').hide()
   $('#comment-com').hide()
   $('.submit-comment').hide()
 }
 })
-fetch('https://script.google.com/macros/s/AKfycbz0XZ5val2JnT1DfN874JMS9DAPykvRM34K1PsO7mZ9TXU207y5Zrhjvyso0kPa9zcLJw/exec').then(function (response) {
+fetch('https://the-wedding-j1u.pages.dev/wedding/json/coment.json').then(function (response) {
  return response.json();
 }).then(function (json) {
 
@@ -221,9 +221,9 @@ val = filterArray(val)
       3: 'Mar',
       4: 'Apr',
       5: 'Mei',
-      6: 'Jun',
-      7: 'Jul',
-      8: 'Agst',
+      6: 'Juni',
+      7: 'Juli',
+      8: 'Ags',
       9: 'Sept',
       10: 'Okt',
       11: 'Nov',
