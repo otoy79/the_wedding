@@ -194,7 +194,7 @@ if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Только что</i><p class="comment-text">${comment}</p></div>`)
 name = encodeURI(name)
   comment = encodeURI(comment)
-$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2shhGVq0doB6AyP1KSHhA/viewform?usp=dialog' );
+$.post( 'https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2shhGVq0doB6AyP1KSHhA/viewform?usp=sharing=+comment+''' );
    $('.counter').text( $('.counter').text()*1+1)
   $('.comment-wrapper').append('<p class="comment-text">Ваш комментарий оставлен</p>')
   $('#name-com').hide()
@@ -202,7 +202,7 @@ $.post( 'https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2s
   $('.submit-comment').hide()
 }
 })
-fetch('https://the-wedding-j1u.pages.dev/wedding/json/coment.json').then(function (response) {
+fetch('https://script.google.com/macros/s/1vldeqydz0kNKK0RdiJmsyZQtp0S7eYOhBRox3iZdvg8/exec').then(function (response) {
  return response.json();
 }).then(function (json) {
 
