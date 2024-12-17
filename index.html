@@ -529,11 +529,53 @@
                             <p class="mb-0">Ucapkan Selamat dan Doa Restu Kepada Mempelai Untuk Hari Bahagia Mereka Melalui Kolom Berikut :
                             </p>
   </div>
-                            <div class="d-flex align-items-center">
+                          <br>
+    <p class="text-white mb-4">Komentar</p>
+  <div id="demo"></div>
+</div>
+
+     <div style="margin-top:-40px;" class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.8s">
+                   
                             
- <h3></h3><!-- Start BawkBox Code--><script data-sil-id="675621aad73a3c001e62bc1b">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/675621aad73a3c001e62bc1b?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-675621aad73a3c001e62bc1b"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div><!-- End BawkBox Code-->
+ <form action="https://docs.google.com/forms/d/e/1FAIpQLSd3jVXc8QVsSC9xyvFXIuzEsWeXH2shhGVq0doB6AyP1KSHhA/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <p>Comment<br><small>Tulis komentar anda</small></p>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "371384917" -->
+    <fieldset>
+        <legend for="371384917">Name</legend>
+        <div class="form-group">
+            <input id="1069867641" type="text" name="entry.1069867641" class="form-control" required>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "1115630580" -->
+    <fieldset>
+        <legend for="1115630580">Comment</legend>
+        <div class="form-group">
+            <textarea id="340535730 comments" name="entry.340535730" class="form-control" required></textarea>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="6815788894118525814">
   
-                            </div>
+    <input type="hidden" name="pageHistory" value="0">
+  <br>
+    <input class="btn btn-primary" type="submit" value="Kirim">
+</form>
+
+   </div></div></div></div>
+
+
                         </div>
                     </div>                
                 </div>
@@ -606,6 +648,42 @@
             </ul>
     </div >
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
+  <script>
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+    })
+})
+</script>
+
+ <script type="text/javascript">
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+         var data=JSON.parse(xhttp.responseText);
+         data.forEach(function(element) {
+      document.getElementById("demo").innerHTML +="🕘: " + element.Timestamp + "<br>Nama: " + element.Name + "<br>Komentar: " + element.Comment + "<br><br>";
+    });
+      }
+  };
+  xhttp.open("GET", "https://sheet2api.com/v1/mQ2pfowQTS8s/comment-jawaban", true);
+  xhttp.send();
+
+ </script>
+  
 
 
     </body>
