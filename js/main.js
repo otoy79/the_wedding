@@ -258,15 +258,15 @@ function hidePopup() {
 
 createPopup('mail');
 
-var words = ['Assalamu `alaikum warohmatullah', ' Puji Syukur Kepada Allah ﷻ  ', ' Yang telah melimpahkan ', ' Anugerah & Kebahagiaan ', ' Dengan ini kami bermaksud ', ' Mengundang Ibu/Bp/Saudara/i. '  ],
+var words = ['Assalamu `alaikum warohmatullah'  ],
     part,
     i = 0,
     offset = 0,
     len = words.length,
     forwards = true,
     skip_count = 0,
-    skip_delay = 25,
-    speed = 60;
+    skip_delay = 105,
+    speed = 90;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
@@ -407,5 +407,4 @@ function getRemainingTime(target, parts, first=true){
   // BG MUSIK 
 var bleep1 = new Audio(); bleep1.src ='mp3/Christina_Perri.mp3';
  bleep1.loop = true;
-
 
