@@ -366,8 +366,10 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.1);
-    display: grid;
-    place-items: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    
     transition: opacity 2s;
    z-index: 999;
 }
@@ -377,7 +379,7 @@ main {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
-    min-height: 40rem;
+    min-height: 0rem;
     border-radius: .5rem;
      width: 100%;
     height: 100%;
@@ -391,16 +393,18 @@ main {
     animation: hide 0.8s linear forwards !important;
 }
 .popup-header {
-    min-height: 35.5rem;
+    min-height: 0.5rem;
     display: grid;
     place-items: center;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
 }
 
 .popup-text {
-    margin: 4rem;
+    margin: 2rem;
     text-align: center;
-    margin-top: 65%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+   
 }
 .popup-text h5 {
     font-size: 21px;
@@ -413,14 +417,14 @@ main {
     font-size: 25px;
     margin-bottom: 1rem;
    font-family: cursive;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 .popup-text button {
     width: 100%;
     border: none;
     padding: 10px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border-radius: 1.0rem;
     font-family: inherit;
     font-size: inherit;
