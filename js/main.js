@@ -30,7 +30,7 @@
         animateOut: 'slideOutDown',
         items: 1,
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 2000,
         dots: false,
         loop: true,
         nav : false,
