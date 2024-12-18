@@ -531,8 +531,9 @@
   </div>
                           <br>
     <p class="text-white mb-4">Komentar</p>
-  <div id="demo"></div>
-</div>
+  <div id="comment"></div>
+
+  </div></div>
 
      <div style="margin-top:-40px;" class="container-fluid blog py-5">
             <div class="container py-5">
@@ -669,22 +670,23 @@ $('#bootstrapForm').submit(function (event) {
 })
 </script>
 
- <script type="text/javascript">
+  <script type="text/javascript">
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
          var data=JSON.parse(xhttp.responseText);
          data.forEach(function(element) {
-      document.getElementById("demo").innerHTML +="🕘: " + element.Timestamp + "<br>Nama: " + element.Name + "<br>Komentar: " + element.Comment + "<br><br>";
+      document.getElementById("comment").innerHTML +=" <div id='comment'> <p class='time'>🕘: " + element.Timestamp + " </p><p class='name'>   Name: " + element.Name + "</p><p class='comment'>🔸   " + element.Comment + "</p></div>";
     });
       }
   };
-  xhttp.open("GET", "https://sheet2api.com/v1/mQ2pfowQTS8s/comment-jawaban", true);
+  xhttp.open("GET", "https://sheetdb.io/api/v1/tjt91n146nwly", true);
   xhttp.send();
 
+  window.setTimeout( function() {
+  window.location.reload();
+}, 50000);
  </script>
-  
-
 
     </body>
 
