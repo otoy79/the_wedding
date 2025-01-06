@@ -457,9 +457,15 @@
                             </p>
   </div>
                           <br>
-    <p class="text-white mb-4">Komentar</p>
-
+    <p id='test' class="text-white mb-4">Komentar</p>
+     <div id='test' class="cont-comment">
   <div id="comment"></div>
+   </div>
+   <p class="looking" onclick="test()">Lihat semua komentar 
+       <form>
+                <button onclick="test()">Refresh</button>
+            </form>     
+   </p>
   </div>
 
                <div class="container-fluid about bg-light py-5">
@@ -497,6 +503,8 @@
   <br>
     <input class="btn btn-primary" type="submit" value="Kirim">
 </form>
+
+  <div class="powr-comments" id="00b84010_1736177861"></div><script src="https://www.powr.io/powr.js?platform=google"></script>
 
                         </div>
                     </div>                
@@ -620,12 +628,17 @@ $('#bootstrapForm').submit(function (event) {
     });
       }
   };
-  xhttp.open("GET", "https://api.sheetbest.com/sheets/a4a57654-3cad-4262-92b4-c9ab76a6e597", true);
+  xhttp.open("GET", "https://sheet2api.com/v1/mQ2pfowQTS8s/comment-jawaban", true);
   xhttp.send();
-
- 
  </script>
-
+ <script>
+        function test(){
+                document.getElementById("test").innerHTML = "replaced";
+ setTimeout(function(){
+      location.reload();
+     },30000);
+            }
+        </script>
     </body>
 
 </html>
