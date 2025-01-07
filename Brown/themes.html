@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>The Wedding Undangan Digital</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+<meta itemprop="name" content="The Wedding">
+<meta itemprop="description" content="The Wedding Of. Undangan Digital. Semple Undangan Gigital">
+<meta itemprop="image" content="https://the-wedding-j1u.pages.dev/img/icon.png">
+
+        <!-- Google Web Fonts -->
+        
+        <!-- Icon Font Stylesheet -->
+          <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/brown.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+      <link href="../css/bglove2.css" rel="stylesheet">
+  <style>
+#myRoll {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  z-index: 99;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgba(184, 71, 11, 0.4);
+  color: white;
+  cursor: pointer;
+  padding: 0px 13px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+#myRoll:hover {
+  background-color: #f57114;
+}
+  .m{
+  box-sizing: border-box;
+}
+html ,body {
+    margin: 0px;
+    overflow-x: hidden;
+    opacity: 0.9;
+  font-family: PointRegular;
+   
+}
+body {
+  background: linear-gradient(rgba(207, 176, 124, 0.3), rgba(207, 176, 124, 0.8)), url(img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+  height: 100%;
+}
+@font-face {
+    font-family: LPMQ;
+    src: url(font/LPMQ.ttf)
+}
+@font-face {
+    font-family: PointRegular;
+    src: url(font/PointRegular.ttf)
+}
+@font-face {
+    font-family: Self;
+    src: url(font/Self.ttf)
+}
+@font-face {
+    font-family: Baguile;
+    src: url(font/Baguile.otf)
+}
+.item {
+  width: 75%;
+  margin: 65px auto;
+  padding-top: 15px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgba(204, 166, 100, 0.6);
+  text-align: center;
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.3), rgba(156, 90, 20, 0.7)), url(img/borders.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+ .item h1  {
+   font-family: cursive;
+    text-shadow: 3px 2px #b8c1c2, 2px 3px #593b06, 2px 4px #593b06;
+  font-size: 36px;
+  font-weight: bold;
+}
+ .item h2  {
+  font-family: Georgia, serif;
+    text-shadow: 3px 2px #b8c1c2, 2px 3px #593b06, 2px 4px #593b06;
+  font-size: 20px;
+}
+ .item p {
+  magin: 0;
+  font-size: 26px;
+  color: #fff;
+}
+.size {
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+}
+.ayat {
+  width: 70%;
+  margin: 60px auto;
+  margin-bottom: 40px;
+  font-family: LPMQ;
+  font-size: 22px;
+  margin-top: 35px;
+   padding: 50px;
+  background: rgba(204, 166, 100, 0.6);
+  text-align: right;
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.1)), url(img/border2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+  }
+ .bismillah {
+   text-align: center;
+   margin: 10px;
+  font-size: 22px;
+}
+.arti {
+  font-size: 12px;
+  text-align: left;
+  line-height: 14px;
+  margin: 10px;
+}
+.item2 {
+  width: 80%;
+  margin: 25px auto;
+  padding: 8px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/border3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 10px;
+}
+ .bold {
+ color: #452f0a;
+  position: absolute;
+  left: 0%;
+  top: 50% auto;
+  font-size: 28px;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+  font-family: cursive;
+  letter-spacing: .2rem;
+  z-index:2;
+}
+.adam {
+  width: 120px;
+  height: 120px;
+  margin: 5px auto;
+  padding: 5px;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 50%;
+}
+.hawa {
+  width: 120px;
+  height: 120px;
+  margin: 5px auto;
+  padding: 5px;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.item3 {
+  width: 300px;
+  height: 300px;
+  margin: 25px auto;
+  text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-weight: normal;
+   border-radius: 3%;
+   padding-bottom: 95px;
+}
+ .adam2 {
+  position: relative;
+  left:0;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  background: rgba(240, 206, 149, 0.1);
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+}
+
+  .border-item3 {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  background: rgba(240, 206, 149, 0.1);
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/border4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+ .text-adam {
+  width: 100%;
+  color: #452f0a;
+  position: absolute;
+  bottom: 5px;
+  left: 0%;
+  font-size: 16px;
+  text-align: center;
+  font-family: serif;
+  text-shadow: 3px 2px #b8c1c2, 2px 3px #593b06, 2px 4px #593b06;
+  border-radius: 10px;
+  background: rgba(240, 206, 149, 0.0);
+  letter-spacing: .1rem;
+}
+  .text2 {
+   font-size: 12px;
+  text-align: center;
+  font-family: sans-serif;
+   text-shadow: none;
+  }
+
+.item5 {
+  width: 80%;
+  margin: 65px auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-weight: normal;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+   border-radius: 3%;
+   padding: 10px;
+  font-family: Georgia, serif;
+}
+   .item4, h1 {
+   font-size: 20px;
+   margin-bottom: 8px;
+}
+ .item4, p {
+   margin: 0px;
+}
+.countedown {
+  padding: 10px;
+  background: rgba(84, 44, 12, 0.9);
+  border: 2px solid #bf773b;
+  color: white;
+  border-radius: 50px 50px 0 0 ;
+}
+
+.countedown h2 {
+  background-color: #bf773b;
+  margin: 0;
+  padding: 7px;
+  text-transform: capitalize;
+  border-radius: 50px 50px 0 0 ;
+  color: white;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.counter div {
+  background-color: #bf773b;
+  width: 22%;
+  padding: 10px;
+  border-radius: 50px 50px 0 0 ;
+}
+
+span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 10px;
+  color: white;
+}
+.item4 {
+  width: 85%;
+  margin: 25px auto;
+  padding: 5px;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/border3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  color: #4d2505;
+}
+ .item4 h2 {
+  top: 0px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: normal;
+}
+  st:after,
+  st:before{
+    content:" \00a0\00a0\00a0\00a0\00a0 ";
+    text-decoration:line-through;
+   font-size: 22px;
+}
+
+.akad {
+  top: 0px;
+  position: relative;
+  width: 240px;
+  margin: 6px auto;
+  text-align: center;
+   background: rgb(245, 241, 237, 0.5);
+   border-radius: 5%;
+   padding-bottom: 5px;
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   padding: 15px;
+   border: 0.1px solid #6e3e17;
+   box-shadow: rgba(156, 90, 20, 0.5) 0px 30px 60px -12px inset, rgba(156, 90, 20, 0.8) 0px 18px 36px -18px inset;
+}
+  .akad p {
+  margin: 8px auto;
+  font-size: 14px;
+  font-family: system-ui;
+}
+ .salaman {
+   width: 50px;
+  height: 50px;
+   background: url(img/salaman.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+}
+.merpati {
+   width: 50px;
+  height: 50px;
+   background: url(img/merpati.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.item4 .merpati {
+   margin-top: -5px;
+}
+.item4 .salaman {
+   margin-top: -5px;
+}
+ .maps {
+  background: rgb(130, 73, 13, 0.8);
+  border-radius: 40px;
+   width: 140px;
+  height: 42px;
+   background: linear-gradient(rgba(156, 90, 20, 0.1), rgba(156, 90, 20, 0.6)), url(img/maps.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+ button {border:none}
+
+.item6 {
+  width: 85%;
+  margin: 5px auto;
+  padding-top: 15px;
+  margin-bottom: 1px;
+  padding: 10px;
+  background: rgba(204, 166, 100, 0.3);
+  text-align: center;
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.1), rgba(156, 90, 20, 0.5)), url(img/borders.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  .item6 h2 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.1rem;
+}
+ .item6 p {
+  margin: 0;
+  margin-top: -5px;
+ font-size: 30px;
+}
+.album {
+  width: 225px;
+  height: 240px;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  font-size: 22px;
+  margin-top: 1px;
+   padding: 10px;
+  background: rgba(204, 166, 100, 0.6);
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.1)), url(img/border2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+    .swiper-container {
+      width: 200px;
+      height: 225px;
+      border-radius: 8px; 
+     margin-top:10px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+     display: inline-block;
+  text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+ #slider1 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider2 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider3 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider4 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider5 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider6 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider7 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#slider8 { 
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+.album2 {
+  width: 320px;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  font-size: 22px;
+  margin-top: 1px;
+   padding: 25px;
+  background: rgba(204, 166, 100, 0.6);
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.1)), url(img/border2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+  }
+  .slider {
+  width: fit-content;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  transition: 1s;
+  
+} 
+.buttons {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons button {
+  padding: 0.5rem 1.35rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: rgba(128, 71, 6, 0.7);
+  color: white;
+  cursor: pointer;
+}
+.images {
+  --max-h: 80vh;
+  --max-w: 80vw;
+  /* Assigned to variable to reuse on img */
+  max-width: var(--max-w);
+  max-height: var(--max-h);
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  overflow: hidden;
+  transition: 2s;
+  
+}
+img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  max-height: var(--max-h);
+  max-width: var(--max-w);
+  height: var(--height);
+  width: var(--width);
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transition: .6s;
+}
+img:first-of-type {
+  left: 0;
+}
+   
+  .item7 {
+  width: 75%;
+  margin: 30px auto;
+  margin-bottom: 50px;
+  font-size: 25px;
+  margin-top: 1px;
+   padding: 25px;
+  background: rgba(204, 166, 100, 0.6);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.5), rgba(156, 90, 20, 0.8)), url(img/adam4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    letter-spacing: 0.1rem;
+   -webkit-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+-moz-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+  }
+ .item7 h2 {
+  margin: 0;
+  text-align: left;
+}
+ .item7 p {
+  margin: 0;
+  letter-spacing: 0.1rem;
+  text-align: left;
+}
+   .item-card {
+  display: none;
+  width: 100%;
+  margin: 15px auto;
+  margin-bottom: 10px;
+  font-size: 25px;
+   padding: 2px;
+   padding-bottom: 25px;
+  background: rgba(204, 166, 100, 0.9);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.5), rgba(156, 90, 20, 0.6)), url(img/hawa4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    letter-spacing: 0.1rem;
+   border: 1px solid #6e3e17;
+  }
+ 
+.btn0 {
+  position: relative;
+  width: 4.5em;
+  padding: 0.2em ;
+  margin: 15px;
+  left: 20%;
+  transform: translateX(-50%);
+  font-size: 1.2em;
+  color: #eee; 
+  background: rgba(128, 71, 6, 0.7);
+  border: 1px solid #aaa;
+  border-radius: 0.4em;
+  box-shadow: 0 1px 0 #452f0a,
+    0 0 2px rgba(#1B6CBD, 0.8);
+  text-shadow: 0.05em 0.05em 0 #555;
+} 
+.btn0,
+.btn0:hover {
+  transition: background 150ms;
+}
+.btn0:hover,
+.btn0:active { 
+  color: #eee; 
+  background: rgba(222, 11, 11, 0.5);
+  border-color: #aaa;
+} 
+
+.card-adam {
+  top: 10px;
+  position: relative;
+  width: 220px;
+  margin: 5px;
+  text-align: center;
+   background: rgb(245, 241, 237, 0.6);
+   border-radius: 10px;
+   padding-bottom: 5px;
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   padding: 5px;
+   border: 1px solid #6e3e17;
+  letter-spacing: none;
+   font-family: Georgia, serif;
+   color: #452f0a;
+}
+.card-adam h4 {
+  margin: 10px;
+  font-size: 20px;
+}
+.card-adam p {
+  margin: 5px;
+  font-size: 13px;
+}
+.fotoC-adam {
+  position: absolute;
+  bottom:0%;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  margin: 5px auto;
+  padding: 5px;
+  background: rgba(240, 206, 149, 0.3);
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/adam1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 25%;
+  border: 1px solid #aaa;
+}
+.fotoC-hawa {
+  position: absolute;
+  bottom:0%;
+  right: 8px;
+  width: 35px;
+  height: 35px;
+  margin: 5px auto;
+  padding: 5px;
+  background: rgba(240, 206, 149, 0.3);
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.3)), url(img/hawa1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 25%;
+  border: 1px solid #aaa;
+}
+.label {
+  margin-top: -6px;
+  padding: 1px;
+  font-size: 11px;
+  color: #111;
+   width: 100px;
+}
+.copy-text {
+  position: relative;
+  padding: 0px 6px
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+}
+.copy-text input.text {
+  font-family: Georgia, serif;
+  padding: 4px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 120px;
+  background: rgb(156, 90, 20, 0.2);
+}
+.copy-text button {
+  padding: 6px;
+  background: #c91414;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.copy-text button:active {
+  background: #c91414;
+}
+.copy-text button::before {
+  content: "Copied";
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  background: rgb(156, 90, 20, 0.5);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+.copy-text button::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 25px;
+  width: 8px;
+  height: 18px;
+  border-radius: 0 150px 0 150px;
+  background: rgb(156, 90, 20, 0.4);
+  transform: rotate(45deg);
+  display: none;
+}
+.copy-text.active button::before,
+.copy-text.active button::after {
+  display: block;
+}
+.label2 {
+  margin-top: -6px;
+  padding: 1px;
+  font-size: 11px;
+  color: #111;
+   width: 100px;
+}
+.copy-text2 {
+  position: relative;
+  padding: 0px 6px
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+}
+.copy-text2 input.text {
+  font-family: Georgia, serif;
+  padding: 4px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 120px;
+  background: rgb(156, 90, 20, 0.2);
+}
+.copy-text2 button {
+  padding: 6px;
+  background: #c91414;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.copy-text2 button:active {
+  background: #c91414;
+}
+.copy-text2 button::before {
+  content: "Copied";
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  background: rgb(156, 90, 20, 0.5);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 15px;
+  display: none;
+}
+.copy-text2 button::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 25px;
+  width: 8px;
+  height: 18px;
+  border-radius: 0 150px 0 150px;
+  background: rgb(156, 90, 20, 0.4);
+  transform: rotate(45deg);
+  display: none;
+}
+.copy-text2.active button::before,
+.copy-text2.active button::after {
+  display: block;
+}
+
+  .item8 {
+  width: 75%;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  font-size: 25px;
+  margin-top: 1px;
+   padding: 25px;
+   padding-top: 20px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.4), rgba(156, 90, 20, 0.8)), url(img/adam3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    letter-spacing: 0.1rem;
+   -webkit-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+-moz-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+  }
+
+ .bg-doa {
+  position: absolute;
+  bottom:0%;
+  right: 5%;
+  width: 120px;
+  height: 120px;
+  margin: 5px auto;
+  padding: 5px;
+  background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.0)), url(img/doa.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  z-index: 0;
+}
+ .text-doa {
+  position: relative;
+  top:10%;
+  right: 0%;
+  text-align: right;
+  padding-top: 60%;
+  font-size: 20px;
+}
+
+  #slideit {
+  width: 99%;
+  height: 440px;
+  margin: 0px auto;
+  margin-bottom: 1px;
+  font-size: 21px;
+  font-weight: normal;
+  margin-top: 1px;
+   animation: fadeinout 8s infinite;
+}
+  .contain {
+  position: relative;
+  height: 440px auto;
+  width: 99%;
+  margin: 5px auto;
+  text-align: center;
+  color: #4d2505;
+  background: rgba(204, 166, 100, 0.6);
+}
+.item-slideit {
+  width: 75%;
+  margin: 5px auto;
+  padding-top: 15px;
+  margin-top: 0px;
+  padding: 20px;
+  background: rgba(204, 166, 100, 0.6);
+  text-align: center;
+  color: #452f0a;
+  border-radius: 10px;
+  background: linear-gradient(rgba(156, 90, 20, 0.8), rgba(156, 90, 20, 0.9)), url(img/borders.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+ .item9 {
+  position: absolute;
+  top:0px;
+  left: 0;
+  right: 0;
+  font-size: 21px;
+  font-weight: normal;
+  margin-top: 0px;
+   padding: 25px;
+   padding-top: 150px;
+  padding-bottom: 90px;
+  border-radius: 10px;
+  text-align: center;
+    letter-spacing: 0.1rem;
+  background: rgba(240, 206, 149, 0.5);
+   
+  }
+ .item9 h1 {
+  font-family: cursive;
+  font-size: 28px;
+  margin-top: 30px;
+  font-weight: normal;
+  color: #78310b;
+}
+  .item9 h2 {
+  margin: -10px;
+  font-weight: normal;
+  color: #78310b;
+}
+  .item9 h3 {
+  font-family: cursive;
+    text-shadow: 3px 2px #b8c1c2, 2px 3px #593b06, 2px 4px #593b06;
+  font-size: 20px;
+  font-weight: bold;
+  color: #78310b;
+  margin-top: 60px;
+}
+ .item9 p {
+  margin: 30px;
+  font-size: 25px;
+  color: #000;
+}
+ 
+#out {
+  animation: fadeinout 10s infinite;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0;
+  }
+  50%
+  {
+    opacity:1;
+  }
+  100%
+  {
+    opacity:0;
+  }
+}
+
+.item10 {
+  width: 80%;
+  top: 60px;
+  position: relative;
+  margin: 30px auto;
+  text-align: center;
+   background: rgb(245, 241, 237, 0.0);
+   border-radius: 5%;
+   padding-bottom: 5px;
+   padding: 15px;
+   }
+ .hawa-adam {
+  font-family: cursive;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 0px;
+  font-weight: normal;
+  color: #78310b;
+  text-shadow: 3px 2px #f08b18, 2px 3px #f08b18, 2px 4px #f08b18;
+}
+  .keluarga {
+  width: 240px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 1px 0.4px #f08b18, 0.4px 1px #f08b18, 0.4px 1px #f08b18;
+  text-align: center;
+   background: rgb(245, 241, 237, 0.1);
+   border-radius: 5%;
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   padding: 5px;
+   border: 0.1px solid #6e3e17;
+  letter-spacing: none;
+   color: #452f0a;
+}
+ .bp-ibu {
+   margin: 5px;
+  font-family: system-ui;
+  font-size: 12px;
+  color: #000;
+  padding-bottom: 10px;
+  text-shadow: none;
+}
+  .item11 {
+  top: 0px;
+  position: relative;
+  width: 75%;
+  margin: 15px auto;
+  padding: 15px;
+  background: rgba(240, 206, 149, 0.3);
+  text-align: center;
+  background: linear-gradient(rgba(156, 90, 20, 0.1), rgba(156, 90, 20, 0.4)), url(img/border5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  border-radius: 10px;
+  padding-bottom: 25px;
+  color: #4d2505;
+}
+.item11 h4 {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: bold;
+  font-weight: normal;
+  color: #4d2505;
+  text-shadow: 1px 0.4px #eee, 0.4px 1px #eee, 0.4px 1px #f08b18;
+}
+ .item11 p {
+  margin: 6px;
+  font-family: system-ui;
+  font-size: 13px;
+  color: #4d2505;
+  padding-left: 15px;
+  text-shadow: none;
+  text-align: left;
+}
+
+   .item12 {
+  top: 50px;
+  left: 0;
+  position: relative;
+  width: 90%;
+  margin-left: 0;
+  margin: 0;
+  padding: 25px;
+  background: rgba(250, 234, 220, 0.3);
+  padding-bottom: 25px;
+  color: #4d2505;
+  text-align: left;
+  font-weight: normal;
+  font-family: Baguile;
+  font-size: 15px;
+}
+  .item12 h1 {
+  letter-spacing: 1px;
+  font-size: 17px;
+  padding-bottom: 15px;
+  padding: 8px;
+}
+.item12 p {
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  padding-bottom:0px;
+  padding: 2px 8px;
+  font-family: system-ui;
+}
+
+   .foter {
+  left: 0;
+  bottom:0;
+  position: relative;
+  margin-left: 0;
+  margin: 0;
+  padding: 55px;
+  background: rgba(89, 52, 3);
+  padding-bottom: 25px;
+  color: #ccc;
+  font-family: Self;
+  text-align: left;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+  z-index: 0;
+}
+.ft-header {
+  height: 60px;
+  background: linear-gradient(rgba(89, 52, 3, 0.8), rgba(89, 52, 3, 0.9)), url(img/otoy10-7.png);
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+  text-align: center;
+  color: #ccc;
+  margin: 1px;
+  margin-bottom: 120px;
+}
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+  a {
+  text-decoration: none;
+}
+  .contact {
+  color: #ccc;
+  padding: 8px;
+  margin-bottom: 70px;
+  font-size: 11px;
+  font-family: Georgia, serif;
+}
+  .foter p {
+  padding: 8px;
+}
+#myBtnn {
+   margin: 8px; 
+  padding: 5px 50px;
+}
+
+
+.btn {
+  margin-top: 100px;
+  padding: 10px 18px;
+  background: #FFF;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  color: #333;
+}
+
+.content {
+  text-align: center;
+}
+.content__text {
+  width: 200px;
+  height: 0;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: hidden;
+  background: #BAD;
+  }
+  
+ .item, .item2, .item3, .ayat, adam, .hawa, .adam2, .hawa2, .item4, .item5, .album, .album2, .item7, .item11  {
+   -webkit-box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
+  box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
+}
+ </style>
+    </head>
+    <body>
+
+  <button onclick="topFunction()" id="myRoll" title="Go to top" data-aos="fade-up">&#10224;</button>
+
+<div class="item" data-aos="fade-left">
+  <h2 data-aos="zoom-in">The Wedding Of</h2>
+    <h1 data-aos="flip-left">Adam & Hawa</h1>
+  <p>12 Mei 2024</p>
+</div>
+
+<div class="item" data-aos="fade-right">
+  <h2 data-aos="zoom-in" style="font-size:14px">Assalamu'alaikum Warahmatullahi Wabarakatuh
+</h2>
+  <p class="size" data-aos="zoom-out">
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i,
+serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
+</div>
+
+
+<div class="item2" data-aos="fade-in">
+<div class="adam" data-aos="fade-right">
+ <div class="bold" data-aos="fade-up">Adam</div>
+ </div>
+<div class="hawa" data-aos="fade-left">
+ <div class="bold" data-aos="fade-up">Hawa</div>
+ </div></div>
+
+
+<div class="item3" data-aos="zoom-in">
+  <br>
+     <img class="adam2" src="img/adam2.jpeg" data-aos="zoom-in">
+  <div class="border-item3" data-aos="zoom-in">
+   <div class="boxkupu" data-aos="slide-up">
+   <p class="boxadam"></p>
+</div>
+  <div class="boxkupuA" data-aos="slide-up">
+   <p class="boxadam2"></p>
+</div>
+  </div>
+ <h2 class="text-adam" data-aos="zoom-out">
+  <p>💙 Adam Saputra</p> <br>
+    <p class="text2"> Putra dari Bp. Sastro Dimejo <br> Ibu. Sri Atuni </p></h2>
+ </div>
+
+<div class="item3" data-aos="zoom-in">
+  <br>
+     <img class="adam2" src="img/hawa2.jpeg" data-aos="zoom-in">
+  <div class="border-item3" data-aos="zoom-in">
+    <div class="boxkupu2" data-aos="slide-up">
+   <p class="boxhawa"></p>
+</div>
+   <div class="boxkupuH" data-aos="slide-up">
+   <p class="boxhawa2"></p>
+</div>
+  </div>
+ <h2 class="text-adam" data-aos="zoom-out">
+   <p>❤ Hawa Saputri </p> <br>
+<p class="text2"> Putri dari Bp. Maman sastro <br> Ibu. Maryam </p> </h2>
+ </div>
+
+ <div class="item5" data-aos="flip-up">
+     <p>Our Special </p>
+<h1 data-aos="zoom-out">Wedding Event</h1>
+<div class="countedown" data-aos="zoom-in">
+    <h2>Countedown</h2>
+    <div class="counter">
+      <div>
+        <span class="days"></span>
+        <h3>Days</h3>
+      </div>
+      <div>
+        <span class="hours"></span>
+        <h3>Hrs</h3>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <h3>Mins</h3>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <h3>Secs</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="item4" data-aos="zoom-in">
+    <h2><st>  Save Date </st> </h2>
+   <div class="akad" data-aos="fade-right">
+  <p class="salaman"></p>
+    <p style="font-size:26px">𝔸𝕜𝕒𝕕 ℕ𝕚𝕜𝕒𝕙</p>
+     <i class="fa fa-calendar" style="font-size:24px"></i>
+    <p>Sabtu : 12 Mei 2024 </p> 
+   <i class="fa fa-clock-o" style="font-size:28px"></i>
+   <p>09 : 00 ~ Selesai </p>
+  <i class="material-icons" style="font-size:33px">place</i>
+  <p>Sawah Dalam RT:04 / RW:05 Panunggangan Utara Pinang Kota Tangerang </p>
+    <a href="https://maps.app.goo.gl/PaDKQffbc4VmuZKa6"><button class="maps"></button></a>
+</div>
+
+<div class="akad" data-aos="fade-left">
+  <p class="merpati"></p>
+   <p style="font-size:26px">ℝ𝕖𝕤𝕖𝕡𝕤𝕚 </p>
+    <i class="fa fa-calendar" style="font-size:24px"></i>
+    <p>Minggu : 13 Mei 2024 </p> 
+   <i class="fa fa-clock-o" style="font-size:28px"></i>
+   <p>10 : 00 ~ Selesai </p>
+  <i class="material-icons" style="font-size:33px">place</i>
+  <p>Sawah Dalam RT:04 / RW:05 Panunggangan Utara Pinang Kota Tangerang </p>
+   <a href="https://maps.app.goo.gl/PaDKQffbc4VmuZKa6"><button class="maps"></button></a> 
+ </div>
+</div>
+
+<div class="ayat" data-aos="slide-up">
+ <p class="bismillah">
+ بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ 
+  </p>
+وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُ‍‍مْ مِّ‍‍نْ اَنْفُ‍‍سِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُ‍‍مْ مَّ‍‍وَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّ‍‍تَفَكَّرُوْنَ
+<p class="arti">“Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir". (Q.S Ar-Rum : 21) </p>
+</div>
+
+ 
+<div class="item6" data-aos="fade-up">
+  <h2>💕- Our Moment -💕</h2>
+<p>Wedding Gallery</p>
+</div>
+  <div class="album" data-aos="fade-down">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide" id="slider1"></div>
+      <div class="swiper-slide" id="slider2"></div>
+      <div class="swiper-slide" id="slider3"></div>
+      <div class="swiper-slide" id="slider4"></div>
+      <div class="swiper-slide" id="slider5"></div>
+     <div class="swiper-slide" id="slider6"></div>
+      <div class="swiper-slide" id="slider7"></div>
+      <div class="swiper-slide" id="slider8"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+  </div>
+</div>
+
+<div class="album2" data-aos="fade-up">
+ <div class="slider">
+  <div class="images">
+    <img src="img/adam4.jpeg">
+    <img src="img/hawa4.jpeg">
+    <img src="img/adam3.jpeg">
+    <img src="img/hawa3.jpeg">
+    <img src="img/adam1.jpeg">
+    <img src="img/hawa1.jpeg">
+    <img src="img/adam2.jpeg">
+    <img src="img/hawa2.jpeg">
+  </div>
+  <div class="buttons">
+    <button class="left">Left</button>
+    <button class="right">Right</button>
+  </div>
+</div>
+</div>
+
+<div class="item7" data-aos="flip-down">
+   <h2>🎁 Wedding Gift</h2>
+  <p>KIRIM HADIAH</p>
+  <p>Kehadiran Anda merupakan sebuah do'a serta rasa syukur bagi kami, namun jika memberi adalah bentuk Do'a & cinta kasih bagi Anda, Tanpa mengurangi rasa hormat kami bagi tamu yang ingin mengirimkan hadiah kepada kedua mempelai dapat mengirimkannya melalui :</p>
+
+<div class="btn0" type="button">Click Me</div>
+
+ <div class="item-card" data-aos="flip-down">
+  <div class="card-adam" data-aos="fade-right">
+   <div class="fotoC-adam"></div>
+  <h4><i class="fa">&#xf19c;</i> BCA </h4>
+  <p>Atas Nama : </p>
+   <p>Adam Saputra</p>
+  <p>_________________</p>
+  <p>No Rek : </p>
+  <div class="label">
+  <div class="copy-text">
+    <input type="text" class="text" value="1234567890" />
+    <button><i class="fa fa-clone"></i></button>
+</div></div></div>
+
+ <div class="card-adam" data-aos="fade-left">
+    <div class="fotoC-hawa"></div>
+  <h4><i class="fa">&#xf19c;</i> BNI </h4>
+  <p>Atas Nama : </p>
+   <p>Hawa Saputri</p>
+  <p>_________________</p>
+  <p>No Rek : </p>
+  <div class="label2">
+  <div class="copy-text2">
+    <input type="text" class="text" value="0987654321" />
+    <button><i class="fa fa-clone"></i></button>
+</div></div>
+</div>
+</div>
+</div>
+
+
+<div class="item8" data-aos="zoom-out">
+      <div class="bg-doa"></div>
+<p class="text-doa" data-aos="zoom-in">
+  “Ya Allah, jadikanlah akad ini sebagai ikatan yang diberkahi dan dilindungi, tanamkan di antara keduanya kerukunan dan ketetapan yang langgeng, jangan Engkau jadikan di antara keduanya perpecahan, perpisahan dan permusuhan, dan cukupi keduanya bekal hidup di dunia dan akhirat”.</p>
+</div>
+
+ <div class="contain" data-aos="zoom-in">
+ <div id="slideit"  class="item-slideit" data-aos="zoom-in">
+  </div>
+
+  <div class="item9" data-aos="zoom-out">
+     <b>_____ &#10084; _____</b>
+  <h1>𝕋𝕖𝕣𝕚𝕞𝕒 𝕂𝕒𝕤𝕚𝕙</h1>
+<h2>Atas Kehadiran & Doa Restunya</h2>
+
+<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restu, kami ucapkan terima kasih.</p>
+
+  <h3>Sampai Jumpa di Hari Bahagia Kami</h3>
+
+   <ul class="burbujas">
+         
+            <li><span style="display:none"></span></li>
+            <li><span></span></li>
+            <li><span style="display:none"></span></li>
+            <li><span></span></li>
+            <li><span style="display:none">7</span></li>
+            <li style="display:none"><span>8</span></li>
+             <li><span></span></li>
+         
+        </ul>
+</div>
+   
+  <div class="item10" data-aos="zoom-in">
+   <div class="hawa-adam"> Adam & Hawa</div>
+  <div class="keluarga" data-aos="fade-left"> Keluarga <br> Besar
+    Mempelai Pria
+    <div class="bp-ibu">Bpk. .... & Ibu ....</div>
+  </div>
+
+  <div class="keluarga" data-aos="fade-right">Keluarga <br> Besar
+       Mempelai Wanita
+    <div class="bp-ibu">Bpk. .... & Ibu ....</div>
+  </div>
+    <h4>_____ &#9829; &#10084; &#9829_____</h4>
+</div>
+
+
+  <div class="item11" data-aos="zoom-in">
+  <h4 data-aos="zoom-out">Turut Mengundang : </h4>
+  <p>1. Bp : </p>
+  <p>2. Bp : </p>
+  <p>3. Bp : </p>
+  <p>4. Bp : </p>
+  <p>5. Bp : </p>
+  <p>6. Bp : </p>
+</div>
+
+
+ <div class="item12" data-aos="slide-right">
+  <h1>Beri Doa & Ucapan Terbaikmu.</h1>
+  <p>___ ✒️ 💬 _________</p>
+  <p>Tuliskan harapan dan doa terbaik Anda untuk kedua mempelai melalui kolom berikut ini.</p>
+    <button id="myBtnn" >Views Comment</button>
+</div>
+</div>
+
+ <div class="item12" data-aos="fade-up">
+
+
+</div>
+
+
+  <div id="myModol" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+<div class="powr-comments-box" id="9e15b9a0_1733526762"></div><script src="https://www.powr.io/powr.js?platform=google"></script>
+
+    </div>
+    </div>
+    <div class="modal-footer">
+     <button class="close">Close</button>
+  </div></div>
+
+
+
+
+
+
+ <div class="foter">
+          <p>Designed By :</p>
+     <div class="ft-header"></div>
+
+  <div class="contact">
+ <a href="https://wa.me/+6281806420688/?text=Assalamu`alaiku mau pesan buat undangan website..!">
+   <i class="fa fa-whatsapp" style="color: #aaa;font-size:12px;"> Contact</i></a> 
+  <p>©All right reserved 2025 </p>
+    <a href="#" style="color: #aaa;font-size:13px;"> 🌎 myWeb </a>
+  </div>
+</div>
+
+
+
+ 
+
+
+
+
+
+
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/slide.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<script>
+const bt1 = document.querySelector('.hey')
+function changeText(el, dText, nText) {
+  var content = '',
+      context = '';
+  
+  /**
+   * Set the text of a button
+   *     - dependant upon current text
+   **/
+  function setText() {
+    return (content === dText) ? nText : dText;
+  }
+  
+  /* Check to see if the browser accepts textContent */
+  if ('textContent' in document.body) {
+    context = 'textContent';
+    /* Get the current button text */
+    content = el[context];
+  /* Browser does NOT use textContent */
+  } else {
+    /* Get the button text with fallback option */
+    content = el.firstChild.nodeValue;
+  }
+  
+  /* Set button text */
+  if (context === 'textContent') {
+    el.textContent = setText();
+  } else {
+    el.firstChild.nodeValue = setText();
+  }
+}
+
+var defaultText,
+    substituteText,
+    btn0;
+
+/* Default text of the button */
+defaultText = 'Close ';
+/* Alternate text for button */
+substituteText = ' Click me ';
+/* Grab our button */
+btn0 = document.querySelector('.btn0');
+
+/* Add a listener to the button instance so we can manipulate it */
+btn0.addEventListener('click', function() {
+  changeText(this, defaultText, substituteText);
+}, false);
+ 
+</script>
+ <script>
+$(document).ready(function(){
+  $(".btn0").click(function(){
+    $(".item-card").toggle(1500);
+  });
+});
+$("#myBtnn").click(function(){
+  $("#myModol").fadeIn();
+});
+$(".close").click(function(){
+  $(".modal").slideToggle('slow');
+});
+</script>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 50,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+ <!-- scot rooll -->
+<script>
+  $(function() {
+  AOS.init({
+    duration: 2500
+  });
+
+  $('.js-load-more').on('click', function() {
+    var $content = $(this).next('.js-more-content');
+    
+    $content.animate({
+      height: 750,
+    }, 1500);
+  });
+
+  onElementHeightChange(document.body, function(){
+    AOS.refresh();
+  });
+});
+
+function onElementHeightChange(elm, callback) {
+    var lastHeight = elm.clientHeight
+    var newHeight;
+    
+    (function run() {
+        newHeight = elm.clientHeight;      
+        if (lastHeight !== newHeight) callback();
+        lastHeight = newHeight;
+
+        if (elm.onElementHeightChangeTimer) {
+          clearTimeout(elm.onElementHeightChangeTimer); 
+        }
+
+        elm.onElementHeightChangeTimer = setTimeout(run, 2500);
+    })();
+  }
+
+ </script>
+  
+   <!-- Time Out -->
+<script>
+    let countDown = new Date("jan 31 2025 23:59").getTime();
+
+let counter = setInterval(() => {
+  let dateNow = new Date().getTime();
+  //date defferente
+  let dateDeff = countDown - dateNow; 
+
+  //days
+  let days = Math.floor(dateDeff / (1000 * 60 * 60 * 24));
+
+  //hours
+  let hours = Math.floor((dateDeff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  
+  //minute
+  let minutes = Math.floor((dateDeff % (1000 * 60 * 60)) / (1000 * 60));
+  
+  //seconds
+  let seconds = Math.floor((dateDeff % (1000 * 60)) / 1000);
+
+  days < 10 ? document.querySelector(".days").innerHTML = `0${days}` : document.querySelector(".days").innerHTML = days;;
+  hours < 10 ? document.querySelector(".hours").innerHTML = `0${hours}` : document.querySelector(".hours").innerHTML = hours;;
+  minutes < 10 ? document.querySelector(".minutes").innerHTML = `0${minutes}` : document.querySelector(".minutes").innerHTML = minutes;;
+  seconds < 10 ? document.querySelector(".seconds").innerHTML = `0${seconds}` : document.querySelector(".seconds").innerHTML = seconds;;
+
+   if (dateDeff  <= 1000) {
+    clearInterval(counter);
+   }
+}, 1000);
+</script>
+   <!-- Copy Text -->
+<script>
+let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+  let input = copyText.querySelector("input.text");
+  input.select();
+  document.execCommand("copy");
+  copyText.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText.classList.remove("active");
+  }, 3500);
+});
+</script>
+<script>
+let copyText2 = document.querySelector(".copy-text2");
+copyText2.querySelector("button").addEventListener("click", function () {
+  let input = copyText2.querySelector("input.text");
+  input.select();
+  document.execCommand("copy");
+  copyText2.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText2.classList.remove("active");
+  }, 3500);
+});
+
+</script>
+
+
+ <!-- Bg Show -->
+
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(window).load(function() {           
+  var i =0; 
+  var images = ['img/adam3.jpeg','img/adam4.jpeg','img/hawa3.jpeg'];
+  var image = $('#slideit');
+                //Initial Background image setup
+  image.css('background-image', 'url(img/hawa4.jpeg)');
+                //Change image at regular intervals
+  setInterval(function(){   
+   image.fadeOut(1000, function () {
+   image.css('background-image', 'url(' + images [i++] +')');
+   image.fadeIn(1000);
+   });
+   if(i == images.length)
+    i = 0;
+  }, 8000);            
+ });
+</script>
+
+
+
+</body>
+</html>
