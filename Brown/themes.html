@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/brown.css">
-
+  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -864,23 +864,110 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 
   #slideit {
   width: 99%;
-  height: 440px;
+  height: 460px;
   margin: 0px auto;
   margin-bottom: 1px;
   font-size: 21px;
   font-weight: normal;
   margin-top: 1px;
-   animation: fadeinout 8s infinite;
-}
-  .contain {
-  position: relative;
-  height: 440px auto;
-  width: 99%;
-  margin: 5px auto;
-  text-align: center;
-  color: #4d2505;
   background: rgba(204, 166, 100, 0.6);
+  
 }
+   .bgg {
+  display: inline block;
+    align-items: center;
+    justify-content: center;
+}
+  .hm-img-txt {
+   width: 99%;
+   position: absolute;
+   top: 0;
+   left: 0;
+    animation: 16s autoplay1 infinite;
+    opacity: 0;
+}
+
+.hm-img-txt:nth-child(1) {
+  animation-delay: 0s
+}
+.hm-img-txt:nth-child(2) {
+  animation-delay: 4s
+}
+.hm-img-txt:nth-child(3) {
+  animation-delay: 8s
+}
+.hm-img-txt:nth-child(4) {
+  animation-delay: 12s
+}
+
+@keyframes autoplay1 {
+  0% {opacity: 1}
+  30.00% {opacity: 0}
+}
+
+.
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+   .img0 {
+   width: 99%;
+   height: 480px;
+   background: linear-gradient(rgba(156, 90, 20, 0.3), rgba(156, 90, 20, 0.5)), url(img/adam3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+}
+     .imgA {
+   width: 99%;
+   height: 500px;
+   background: linear-gradient(rgba(156, 90, 20, 0.3), rgba(156, 90, 20, 0.5)), url(img/hawa3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   animation: fadein 1s infinite;
+}
+     .imgB {  
+  width: 99%;
+   height: 500px;
+   background: linear-gradient(rgba(156, 90, 20, 0.3), rgba(156, 90, 20, 0.5)), url(img/adam4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   animation: fadein 1s infinite;
+}
+     .imgC {  
+   width: 99%;
+   height: 500px;
+   background: linear-gradient(rgba(156, 90, 20, 0.3), rgba(156, 90, 20, 0.5)), url(img/hawa4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   animation: fadein 1s infinite;
+}
+ 
+
+ .fade-in-out {
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+ 
 .item-slideit {
   width: 75%;
   margin: 5px auto;
@@ -891,9 +978,7 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   text-align: center;
   color: #452f0a;
   border-radius: 10px;
-  background: linear-gradient(rgba(156, 90, 20, 0.8), rgba(156, 90, 20, 0.9)), url(img/borders.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  
 }
 
  .item9 {
@@ -957,7 +1042,14 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
     opacity:0;
   }
 }
-
+@-webkit-keyframes arrowInOut {
+   0%,100% {opacity: 0;}
+   50% {opacity: 1;}
+}
+@keyframes arrowInOut {
+   0%,100% {opacity: 0;}
+   50% {opacity: 1;}
+}
 .item10 {
   width: 80%;
   top: 60px;
@@ -1358,7 +1450,21 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 </div>
 
  <div class="contain" data-aos="zoom-in">
- <div id="slideit"  class="item-slideit" data-aos="zoom-in">
+    <div id="slideit"  class="item-slideit" data-aos="zoom-in">
+   <div class="bgg">
+<div class="hm-img-txt">
+  <p class="img0"></p>
+  </div>
+<div class="hm-img-txt">
+   <p class="imgA"></p>
+</div>
+<div class="hm-img-txt">
+    <p class="imgB"></p>
+</div>
+<div class="hm-img-txt">
+    <p class="imgC"></p>
+</div>
+</div>
   </div>
 
   <div class="item9" data-aos="zoom-out">
@@ -1382,7 +1488,8 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
          
         </ul>
 </div>
-   
+
+
   <div class="item10" data-aos="zoom-in">
    <div class="hawa-adam"> Adam & Hawa</div>
   <div class="keluarga" data-aos="fade-left"> Keluarga <br> Besar
@@ -1463,10 +1570,7 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- img background JS -->
-   <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-
-
+  
 <script>
 const bt1 = document.querySelector('.hey')
 function changeText(el, dText, nText) {
@@ -1651,27 +1755,6 @@ copyText2.querySelector("button").addEventListener("click", function () {
 </script>
 
 
- <!-- Bg Show -->
-
-
-<script type="text/javascript">
-  $(window).load(function() {           
-  var i =0; 
-  var images = ['img/adam3.jpeg','img/adam4.jpeg','img/hawa3.jpeg'];
-  var image = $('#slideit');
-                //Initial Background image setup
-  image.css('background-image', 'url(img/hawa4.jpeg)');
-                //Change image at regular intervals
-  setInterval(function(){   
-   image.fadeOut(1000, function () {
-   image.css('background-image', 'url(' + images [i++] +')');
-   image.fadeIn(1000);
-   });
-   if(i == images.length)
-    i = 0;
-  }, 8000);            
- });
-</script>
 
 
 
