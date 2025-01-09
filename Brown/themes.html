@@ -1542,15 +1542,17 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 
 
   <div id="myModol" class="modal">
+   <div class="modal-footer">
+     <button class="close">Close</button>
+  </div>
+  <span class="close-x"></span>
   <div class="modal-content">
     <div class="modal-body">
 <div class="powr-comments-box" id="9e15b9a0_1733526762"></div><script src="https://www.powr.io/powr.js?platform=google"></script>
 
+   </div>
     </div>
     </div>
-    <div class="modal-footer">
-     <button class="close">Close</button>
-  </div></div>
 
 
 
@@ -1649,6 +1651,9 @@ $(".close").click(function(){
 });
 $(".close-wel").click(function(){
   $("#myWelcome").slideToggle('slow');
+});
+$(".close-x").click(function(){
+  $(".modal").slideToggle('slow');
 });
 </script>
   
