@@ -54,7 +54,7 @@ html ,body {
     overflow-x: hidden;
     opacity: 0.9;
   font-family: PointRegular;
-   
+   background-color: rgba(245, 206, 140, 0.9);
 }
 body {
   background: linear-gradient(rgba(207, 176, 124, 0.3), rgba(207, 176, 124, 0.8)), url(img/bg1.jpg);
@@ -1235,7 +1235,7 @@ a:link {
   background: #BAD;
   }
   
- .item, .item2, .item3, .ayat, adam, .hawa, .adam2, .hawa2, .item4, .item5, .album, .album2, .item7, .item11  {
+ .item, .item2, .item3, .ayat, adam, .hawa, .adam2, .hawa2, .item4, .item5, .album, .album2, .item7, .item11, .wel-conten  {
    -webkit-box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
   box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
 }
@@ -1243,12 +1243,26 @@ a:link {
     </head>
     <body>
 
+   <div id="myWelcome" class="welcome">
+     <h2 data-aos="zoom-in">Bismillahirohmanirrohim</h2>
+  <div class="wel-content">
+    <p class="wel-body"></p>
+     <div class="boxkupuWel" data-aos="slide-up">
+   <p class="boxWel"></p>
+</div>
+    </div>
+    <div class="wel-footer">
+     <button class="close-wel">📩 Open Invitation</button>
+  </div></div>
+
+
+
   <button onclick="topFunction()" id="myRoll" title="Go to top" data-aos="fade-up">&#10224;</button>
 
 <div class="item" data-aos="fade-left">
   <h2 data-aos="zoom-in">The Wedding Of</h2>
     <h1 data-aos="flip-left">Adam & Hawa</h1>
-  <p>12 Mei 2024</p>
+  <p>12 Mei 20..</p>
 </div>
 
 <div class="item" data-aos="fade-right">
@@ -1632,6 +1646,9 @@ $("#myBtnn").click(function(){
 });
 $(".close").click(function(){
   $(".modal").slideToggle('slow');
+});
+$(".close-wel").click(function(){
+  $("#myWelcome").slideToggle('slow');
 });
 </script>
   
