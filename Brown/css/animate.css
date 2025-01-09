@@ -120,7 +120,36 @@
   background-position:right; /* get the right part of the image */
   animation-name:right;
   transform-origin:left;
- 
+}
+
+.boxkupuWel {
+ position: absolute;
+ bottom: -8px;
+  left : 69px;
+  width:100px;
+  margin:0px auto;
+   rotate: z -30deg;
+}
+.boxWel {
+  width:100px;
+  margin:0px auto;
+  display:flex;
+  perspective:500px;
+}
+.boxWel::before,
+.boxWel::after{
+  content:"";
+  padding-top:56%; /* ratio based on your image */
+  flex:1; /* half the main element size */
+  background-image:url(../img/kupu.png);
+  background-size:200% 100%; /* twice bigger than the pseudo element to get half the image*/
+  animation:left 0.85s linear infinite alternate;  
+  transform-origin:right;
+}
+.boxWel::after {
+  background-position:right; /* get the right part of the image */
+  animation-name:right;
+  transform-origin:left;
 }
 
 @keyframes left{
