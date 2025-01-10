@@ -143,8 +143,9 @@ body {
 }
 .item2 {
   width: 80%;
-  margin: 25px auto;
-  padding: 8px;
+  min-height: 200px auto;
+  margin: 0px auto;
+  padding: 15px;
   display: flex;
     align-items: center;
     justify-content: center;
@@ -155,22 +156,33 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   border-radius: 10px;
+  font-weight: bold;
 }
- .bold {
+ .boldA {
  color: #452f0a;
   position: absolute;
-  left: 0%;
+  left: 15px;
   top: 50% auto;
   font-size: 28px;
   writing-mode: vertical-rl;
 text-orientation: mixed;
   font-family: cursive;
-  letter-spacing: .2rem;
+  z-index:2;
+}
+ .boldH {
+ color: #452f0a;
+  position: absolute;
+  right: 15px;
+  top: 50% auto;
+  font-size: 28px;
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+  font-family: cursive;
   z-index:2;
 }
 .adam {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   margin: 5px auto;
   padding: 5px;
   background: rgba(240, 206, 149, 0.3);
@@ -182,8 +194,8 @@ text-orientation: mixed;
   border-radius: 50%;
 }
 .hawa {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   margin: 5px auto;
   padding: 5px;
   background: rgba(240, 206, 149, 0.3);
@@ -195,24 +207,34 @@ text-orientation: mixed;
   border-radius: 50%;
 }
 
+.item3A {
+  width: 99%;
+  margin: 30px auto;
+  background: rgba(204, 166, 100, 0.1);
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   text-align: center;
+ }
 .item3 {
   width: 300px;
   height: 300px;
   margin: 25px auto;
   text-align: center;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-weight: normal;
-    font-weight: normal;
    border-radius: 3%;
    padding-bottom: 95px;
+  margin: 18px;
 }
  .adam2 {
   position: relative;
   left:0;
   z-index: 1;
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   background: rgba(240, 206, 149, 0.1);
   text-align: center;
   color: #FFF;
@@ -256,10 +278,9 @@ text-orientation: mixed;
 
 .item5 {
   width: 80%;
-  margin: 65px auto;
+  margin: 45px auto;
     align-items: center;
     justify-content: center;
-    font-weight: normal;
     font-weight: normal;
   background: rgba(240, 206, 149, 0.3);
   text-align: center;
@@ -1012,7 +1033,7 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 }
   .item9 h3 {
   font-family: cursive;
-    text-shadow: 3px 2px #b8c1c2, 2px 3px #593b06, 2px 4px #593b06;
+    text-shadow: 2px 1px #b8c1c2, 1px 2px #593b06, 1px 2px #593b06;
   font-size: 20px;
   font-weight: bold;
   color: #78310b;
@@ -1078,12 +1099,12 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   font-weight: bold;
   text-shadow: 1px 0.4px #f08b18, 0.4px 1px #f08b18, 0.4px 1px #f08b18;
   text-align: center;
-   background: rgb(245, 241, 237, 0.1);
+   background: rgb(245, 241, 237, 0.5);
    border-radius: 5%;
   display: inline-block;
     align-items: center;
     justify-content: center;
-   padding: 5px;
+   padding-top: 10px;
    border: 0.1px solid #6e3e17;
   letter-spacing: none;
    color: #452f0a;
@@ -1099,9 +1120,9 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   .item11 {
   top: 0px;
   position: relative;
-  width: 75%;
-  margin: 15px auto;
-  padding: 15px;
+  width: 82%;
+  margin: 5px auto;
+  padding-top: 35px;
   background: rgba(240, 206, 149, 0.3);
   text-align: center;
   background: linear-gradient(rgba(156, 90, 20, 0.1), rgba(156, 90, 20, 0.4)), url(img/border5.png);
@@ -1118,14 +1139,28 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   font-weight: normal;
   color: #4d2505;
   text-shadow: 1px 0.4px #eee, 0.4px 1px #eee, 0.4px 1px #f08b18;
+  margin: 0px;
+}
+.item11bg {
+  top: 0px;
+  position: relative;
+  width: 40%;
+  margin-top: 5px;
+  text-align: left;
+   background: rgb(245, 241, 237, 0.5);
+   border-radius: 8px;
+   padding-bottom: 5px;
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   padding: 5px;
+   border: 0.1px solid #6e3e17;
 }
  .item11 p {
-  margin: 6px;
+  margin: 5px;
   font-family: system-ui;
   font-size: 13px;
   color: #4d2505;
-  padding-left: 15px;
-  text-shadow: none;
   text-align: left;
 }
 
@@ -1235,7 +1270,7 @@ a:link {
   background: #BAD;
   }
   
- .item, .item2, .item3, .ayat, adam, .hawa, .adam2, .hawa2, .item4, .item5, .album, .album2, .item7, .item11, .wel-conten  {
+ .item, .item2, .item3, .ayat, .adam, .hawa, .adam2, .hawa2, .item4, .item5, .album, .album2, .item7, .item11, .wel-conten  {
    -webkit-box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
   box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
 }
@@ -1243,7 +1278,21 @@ a:link {
     </head>
     <body>
 
+     <!-- WELCOME -->
    <div id="myWelcome" class="welcome">
+  <div id="txtWel">
+     <b>T</b>
+    <b>H</b>
+    <b>E</b>
+    <b style="padding:4px"></b>
+     <b>W</b>
+     <b>E</b>
+      <b>D</b>
+       <b>D</b>
+      <b>I</b>
+       <b>N</b>
+        <b>G</b>
+</div>
      <h2 data-aos="zoom-in">Bismillahirohmanirrohim</h2>
   <div class="wel-content">
     <p class="wel-body"></p>
@@ -1251,16 +1300,26 @@ a:link {
    <p class="boxWel"></p>
 </div>
     </div>
+
+<div class="rotating-text-wrapper">
+  <h2>The Wedding Of</h2>
+    <!-- EDIT 🔴 -->
+  <h2>Adam & Hawa</h2>
+  <h2>12 Mei 20oo</h2>
+</div>
     <div class="wel-footer">
-     <button class="close-wel">📩 Open Invitation</button>
+     <button class="close-wel">✉️ Open Invitation</button>
   </div></div>
 
 
 
   <button onclick="topFunction()" id="myRoll" title="Go to top" data-aos="fade-up">&#10224;</button>
 
+
 <div class="item" data-aos="fade-left">
-  <h2 data-aos="zoom-in">The Wedding Of</h2>
+  <h2 data-aos="zoom-in">The Wedding Of</h2> 
+  
+     <!-- EDIT 🔴 -->
     <h1 data-aos="flip-left">Adam & Hawa</h1>
   <p>12 Mei 20..</p>
 </div>
@@ -1275,14 +1334,19 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 
 
 <div class="item2" data-aos="fade-in">
+   <!-- EDIT 🔴 -->
+   <div class="boldA" data-aos="fade-up">Adam</div>
+
 <div class="adam" data-aos="fade-right">
- <div class="bold" data-aos="fade-up">Adam</div>
  </div>
 <div class="hawa" data-aos="fade-left">
- <div class="bold" data-aos="fade-up">Hawa</div>
- </div></div>
+ </div>
+    <!-- EDIT 🔴 -->
+ <div class="boldH" data-aos="fade-up">Hawa</div>
+ </div>
 
 
+<div class="item3A" data-aos="zoom-in">
 <div class="item3" data-aos="zoom-in">
   <br>
      <img class="adam2" src="img/adam2.jpeg" data-aos="zoom-in">
@@ -1295,6 +1359,7 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 </div>
   </div>
  <h2 class="text-adam" data-aos="zoom-out">
+   <!-- EDIT 🔴 -->
   <p>💙 Adam Saputra</p> <br>
     <p class="text2"> Putra dari Bp. Sastro Dimejo <br> Ibu. Sri Atuni </p></h2>
  </div>
@@ -1311,10 +1376,13 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 </div>
   </div>
  <h2 class="text-adam" data-aos="zoom-out">
+    <!-- EDIT 🔴 -->
    <p>❤ Hawa Saputri </p> <br>
 <p class="text2"> Putri dari Bp. Maman sastro <br> Ibu. Maryam </p> </h2>
  </div>
+</div>
 
+    <!-- EDIT DI JS TIMER🔴 -->
  <div class="item5" data-aos="flip-up">
      <p>Our Special </p>
 <h1 data-aos="zoom-out">Wedding Event</h1>
@@ -1347,11 +1415,15 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
   <p class="salaman"></p>
     <p style="font-size:26px">𝔸𝕜𝕒𝕕 ℕ𝕚𝕜𝕒𝕙</p>
      <i class="fa fa-calendar" style="font-size:24px"></i>
+    <!-- EDIT 🔴 -->
     <p>Sabtu : 12 Mei 2024 </p> 
    <i class="fa fa-clock-o" style="font-size:28px"></i>
+    <!-- EDIT 🔴 -->
    <p>09 : 00 ~ Selesai </p>
   <i class="material-icons" style="font-size:33px">place</i>
+   <!-- EDIT 🔴 -->
   <p>Sawah Dalam RT:04 / RW:05 Panunggangan Utara Pinang Kota Tangerang </p>
+   <!-- EDIT 🔴 -->
     <a href="https://maps.app.goo.gl/PaDKQffbc4VmuZKa6"><button class="maps"></button></a>
 </div>
 
@@ -1359,11 +1431,15 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
   <p class="merpati"></p>
    <p style="font-size:26px">ℝ𝕖𝕤𝕖𝕡𝕤𝕚 </p>
     <i class="fa fa-calendar" style="font-size:24px"></i>
+    <!-- EDIT 🔴 -->
     <p>Minggu : 13 Mei 2024 </p> 
    <i class="fa fa-clock-o" style="font-size:28px"></i>
+   <!-- EDIT 🔴 -->
    <p>10 : 00 ~ Selesai </p>
   <i class="material-icons" style="font-size:33px">place</i>
+     <!-- EDIT 🔴 -->
   <p>Sawah Dalam RT:04 / RW:05 Panunggangan Utara Pinang Kota Tangerang </p>
+    <!-- EDIT 🔴 -->
    <a href="https://maps.app.goo.gl/PaDKQffbc4VmuZKa6"><button class="maps"></button></a> 
  </div>
 </div>
@@ -1429,6 +1505,7 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
  <div class="item-card" data-aos="flip-down">
   <div class="card-adam" data-aos="fade-right">
    <div class="fotoC-adam"></div>
+    <!-- EDIT 🔴 -->
   <h4><i class="fa">&#xf19c;</i> BCA </h4>
   <p>Atas Nama : </p>
    <p>Adam Saputra</p>
@@ -1442,6 +1519,7 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 
  <div class="card-adam" data-aos="fade-left">
     <div class="fotoC-hawa"></div>
+   <!-- EDIT 🔴 -->
   <h4><i class="fa">&#xf19c;</i> BNI </h4>
   <p>Atas Nama : </p>
    <p>Hawa Saputri</p>
@@ -1505,14 +1583,17 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 
 
   <div class="item10" data-aos="zoom-in">
+    <!-- EDIT 🔴 -->
    <div class="hawa-adam"> Adam & Hawa</div>
   <div class="keluarga" data-aos="fade-left"> Keluarga <br> Besar
     Mempelai Pria
+   <!-- EDIT 🔴 -->
     <div class="bp-ibu">Bpk. .... & Ibu ....</div>
   </div>
 
   <div class="keluarga" data-aos="fade-right">Keluarga <br> Besar
        Mempelai Wanita
+   <!-- EDIT 🔴 -->
     <div class="bp-ibu">Bpk. .... & Ibu ....</div>
   </div>
     <h4>_____ &#9829; &#10084; &#9829_____</h4>
@@ -1521,26 +1602,31 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
 
   <div class="item11" data-aos="zoom-in">
   <h4 data-aos="zoom-out">Turut Mengundang : </h4>
-  <p>1. Bp : </p>
-  <p>2. Bp : </p>
-  <p>3. Bp : </p>
-  <p>4. Bp : </p>
-  <p>5. Bp : </p>
-  <p>6. Bp : </p>
+   <!-- EDIT 🔴 -->
+  <div class="item11bg" data-aos="fade-left">
+  <p>1. Bp : A</p>
+  <p>2. Bp : B</p>
+  <p>3. Bp : C</p>
+  </div>
+  <div class="item11bg" data-aos="fade-right">
+  <p>4. Bp : D</p>
+  <p>5. Bp : E</p>
+  <p>6. Bp : F</p>
+  </div>
 </div>
 
 
  <div class="item12" data-aos="slide-right">
   <h1>Beri Doa & Ucapan Terbaikmu.</h1>
   <p>___ ✒️ 💬 _________</p>
-  <p>Tuliskan harapan dan doa terbaik Anda untuk kedua mempelai melalui kolom berikut ini.</p>
-    <button id="myBtnn" >Views Comment</button>
+  <p>Tuliskan harapan dan doa terbaik Anda untuk calon kedua mempelai melalui kolom berikut ini.</p>
+    <button id="myBtnn" >Send Comment</button>
 </div>
 </div>
 
 
 
-
+    <!-- EDIT BOX COMMENT🔴 -->
   <div id="myModol" class="modal">
    <div class="modal-footer">
      <button class="close">Close</button>
@@ -1717,8 +1803,9 @@ function onElementHeightChange(elm, callback) {
  </script>
   
    <!-- Time Out -->
+    <!-- EDIT 🔴 -->
 <script>
-    let countDown = new Date("jan 31 2025 23:59").getTime();
+    let countDown = new Date("jan 31 2050 23:59").getTime();
 
 let counter = setInterval(() => {
   let dateNow = new Date().getTime();
