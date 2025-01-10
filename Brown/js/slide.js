@@ -96,3 +96,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+// AMINATE TEXT WELCOME
+
