@@ -310,6 +310,82 @@
 }
 
 
+ .ball-wrapper {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 200vh;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  animation: pendulum 2.0s ease-in-out alternate infinite;
+  -webkit-animation: pendulum 2.0s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes pendulum {
+  0% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+}
+@keyframes pendulum {
+  0% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+}
+.ball {
+  width: 20vw;
+  height: 20vw;
+  background: linear-gradient(rgba(242, 110, 44, 0.2), rgba(242, 110, 44, 0.5)), url(../img/adam4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  -webkit-box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
+  box-shadow: -10px 8px 20px 6px #3002026b, 10px 8px 20px 6px #3002026b;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  animation: fadeIn 1.5s ease-in; 
+}
+
+.ball-wire {
+  width: 0.6vw;
+  height: 39vh;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#87836d), color-stop(63%, #e3dabf), to(#858164));
+  background: -o-linear-gradient(left, #87836d 0%, #e3dabf 63%, #858164 100%);
+  background: linear-gradient(90deg, #87836d 0%, #e3dabf 63%, #858164 100%);
+  z-index: 0;
+}
+
 
 
 .burbujas{
