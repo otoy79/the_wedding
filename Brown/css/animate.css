@@ -312,7 +312,7 @@
 
  .ball-wrapper {
   position: absolute;
-  top: 0%;
+  top: -40px;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
@@ -333,6 +333,7 @@
   transform-origin: top;
   animation: pendulum 2.0s ease-in-out alternate infinite;
   -webkit-animation: pendulum 2.0s ease-in-out alternate infinite;
+  z-index: 99999;
 }
 
 @-webkit-keyframes pendulum {
@@ -364,8 +365,8 @@
   }
 }
 .ball {
-  width: 20vw;
-  height: 20vw;
+  width: 18vw;
+  height: 18vw;
   background: linear-gradient(rgba(242, 110, 44, 0.2), rgba(242, 110, 44, 0.5)), url(../img/adam4.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -383,7 +384,7 @@
   background: -webkit-gradient(linear, left top, right top, from(#87836d), color-stop(63%, #e3dabf), to(#858164));
   background: -o-linear-gradient(left, #87836d 0%, #e3dabf 63%, #858164 100%);
   background: linear-gradient(90deg, #87836d 0%, #e3dabf 63%, #858164 100%);
-  z-index: 0;
+  
 }
 
 
