@@ -379,7 +379,7 @@
 
 .ball-wire {
   width: 0.6vw;
-  height: 39vh;
+  height: 60px;
   background: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#87836d), color-stop(63%, #e3dabf), to(#858164));
   background: -o-linear-gradient(left, #87836d 0%, #e3dabf 63%, #858164 100%);
